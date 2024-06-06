@@ -3,3 +3,9 @@
 .w-2 {
     width: 10%;
 }
+
+@media (max-width: 992px) {
+    .w-2 {
+        width: 20%;
+    }
+}
