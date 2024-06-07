@@ -3,6 +3,7 @@
 :root {
     --cor-1: #262626;
     --cor-2: #FFC201;
+    --cor-2-opacity: #ffc401b0;
     --cor-3: #D9D9D9;
 }
 
@@ -22,6 +23,14 @@
     background-color: var(--cor-3);
 }
 
+.bg-yellow {
+    background-color: var(--cor-2);
+}
+
+.bg-yellow:hover {
+    background-color: var(--cor-2-opacity);
+}
+
 .link:hover {
     text-decoration: underline;
 }
@@ -39,4 +48,9 @@
     .w-10 {
         width: 20%;
     }
+
+    .colum-reverse {
+    display: flex;
+    flex-direction: column-reverse;
+}
 }

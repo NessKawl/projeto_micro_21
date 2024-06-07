@@ -57,11 +57,41 @@
     </div>
   </div>
 
-  <main class="container">
-    <section class="row mt-4 d-flex align-items-center">
-      <div class="col-lg-4">
+  <main class="container m-auto">
+
+    <section data-aos="fade-up" data-aos-easing="linear" data-aos-duration="600">
+      <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="assets/faixada-1.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/vista-panorama.jpeg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/faixada-2.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <section class="row mt-4 d-flex align-items-center" data-aos="fade-up-left" data-aos-easing="linear" data-aos-duration="600">
+      <div class="col-lg-4 d-flex justify-content-center">
         <figure class="w-75">
-          <img src="assets/mesa-sol.jpg" alt="" class="w-100">
+          <img src="assets/mesa-sol.jpg" alt="" class="w-100 mb-3">
         </figure>
       </div>
       <div class="col-lg-8">
@@ -72,9 +102,9 @@
         </p>
       </div>
     </section>
-
-    <section class="row mt-3 d-flex align-items-center">
-      <div class="col-lg-8">
+    
+    <section class="row mt-3 d-flex align-items-center colum-reverse" data-aos="fade-down-right" data-aos-easing="linear" data-aos-duration="700">
+      <div class="col-lg-8 ">
         <p class="w-75 ms-5 m-auto">
           Com uma vista panorâmica deslumbrante, os decks são o local ideal para encontros com amigos, momentos românticos
           ou reuniões familiares. A madeira natural dos decks, aliada à decoração rústica e charmosa, cria um ambiente
@@ -82,15 +112,15 @@
           espaço dos decks de madeira da Petiscaria Bela Vista.
         </p>
       </div>
-      <div class="col-lg-4">
-        <figure class="w-75 mt-2">
-          <img src="assets/deck-mesas.jpg" alt="" class="w-100">
-        </figure>
+      <div class="col-lg-4 d-flex justify-content-center">
+        <div class="w-75 mt-2">
+          <img src="assets/deck-mesas.jpg" alt="" class="w-100 mb-3">
+        </div>
       </div>
     </section>
   </main>
 
-  <footer class="bg-black-css p-3 pt-5 text-light" data-aos="fade-up-right" data-aos-duration="600">
+  <footer class="bg-black-css p-4 pt-5 text-light" data-aos="fade-up-right" data-aos-duration="600">
     <div class="row">
       <div class="col-lg-4">
         <figure class="m-auto w-50">
