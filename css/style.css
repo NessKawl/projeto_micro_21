@@ -68,5 +68,11 @@
     .colum-reverse {
     display: flex;
     flex-direction: column-reverse;
+    }
+
+    .bg-image {
+        min-height: 73vh;
+    }
+
 }
-}
+
