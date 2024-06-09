@@ -40,20 +40,24 @@
     transition-duration: 500ms;
 }
 
-.shadow {
-    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.461);
+.shadow-css {
+    box-shadow: 5px 5px 20px  rgba(0, 0, 0, 0.3);
 }
 
 .bg-image {
-    background-image: url('../assets/deck-mesas.jpg');
+    background-image: url('../assets/banco.jpg');
     background-repeat: no-repeat;
     background-size: contain;
-    min-height: 50vh;
+    max-height: 39vh;
 }
 
 .ms-25 {
     margin-left: 60%;
     margin-top: 70%;
+}
+
+.mb-10 {
+    margin-bottom: 50%;
 }
 
 @media (max-width: 992px) {
