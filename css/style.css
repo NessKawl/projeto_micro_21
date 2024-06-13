@@ -51,6 +51,12 @@
     max-height: 39vh;
 }
 
+.img-whats{
+    width: 80px;
+    height: 80px;
+    border-radius: 30%;
+}
+
 .ms-25 {
     margin-left: 60%;
     margin-top: 70%;
