@@ -5,6 +5,7 @@
     --cor-2: #FFC201;
     --cor-2-opacity: #ffc401b0;
     --cor-fundo: #807e7e;
+    --cor-fundo2: #cacaca;
 }
 
 .w-10 {
@@ -21,6 +22,10 @@
 
 .bg-gray-css {
     background-color: var(--cor-fundo);
+}
+
+.bg-gray2-css {
+    background-color: var(--cor-fundo2);
 }
 
 .bg-yellow {
@@ -48,7 +53,7 @@
     background-image: url('../assets/banco.jpg');
     background-repeat: no-repeat;
     background-size: contain;
-    max-height: 39vh;
+    min-height: 39vh;
 }
 
 .img-whats{
@@ -62,9 +67,20 @@
     margin-top: 70%;
 }
 
+.min-w-50 {
+    min-width: 20vw;
+}
+
+.min-h-100 {
+    min-height: 100vh;
+}
+
+
 .mb-10 {
     margin-bottom: 50%;
 }
+
+
 
 @media (max-width: 992px) {
     .w-10 {
@@ -74,10 +90,6 @@
     .colum-reverse {
     display: flex;
     flex-direction: column-reverse;
-    }
-
-    .bg-image {
-        min-height: 73vh;
     }
 
 }
