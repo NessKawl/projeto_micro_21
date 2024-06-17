@@ -2,6 +2,7 @@ let nomeInput = document.querySelector('#nome')
 let telInput = document.querySelector('#tel')
 let diaInput = document.querySelector('#dia')
 let qtdPessoasInput = document.querySelector('#qtdPessoas')
+let btnModal = document.querySelector('#btnModal')
 // let horarioInput = document.querySelector('#horario')
 let emailInput = document.querySelector('#email')
 let obsInput = document.querySelector('#obs')
@@ -19,7 +20,8 @@ function verificaReserva () {
     if (nome === '' || tel === '' || dia === '' || qtdPessoas === '') {
         div.classList.add('alert')
         div.classList.add('alert-danger')
-        div.innerHTML = 'ERRO: Dados inválidos'
+        btnModal.classList.add('d-none')
+        div.innerHTML = 'ERRO: Dados inválidos!'
     } else {
         div.classList.add('alert')
         div.classList.add('alert-success')
@@ -33,6 +35,7 @@ function clearClass () {
     div.classList.remove('alert')
     div.classList.remove('alert-success')
     div.classList.remove('alert-danger')
+    btnModal.classList.remove('d-none')
 }
 
 function clear () {

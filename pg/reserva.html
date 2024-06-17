@@ -8,8 +8,8 @@
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/style.css">
-    <link href="../bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link href="../bootstrap/css/bootstrap.min.css">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
@@ -55,21 +55,41 @@
     </div>
   </div>
 
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header bg-black-css text-light">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Dados da reserva</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body bg-black-css">
+          <div id="res" class=" p-3 m-auto my-3"></div>
+        </div>
+        <div class="modal-footer bg-black-css">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Voltar</button>
+          <a href="../index.html" class="text-decoration-none text-light"><button type="button" class="btn bg-yellow" id="btnModal">Voltar ao início</button></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <main class="container">
 
-    <section class="my-3 p-4" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="600">
+    <section class="my-3 p-4" data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="600">
 
-      <div id="res" class="col-lg-6 p-3 m-auto mb-3"></div>
 
       <h4 class="fw-normal">Faça sua reserva preenchendo os campos abaixo:</h4>
       <form action="" class="row">
         <div class="col-lg-6 mb-3">
           <label for="data">Qual seu nome?</label>
-          <input class="form-control" type="text" placeholder="Digite seu nome" aria-label="default input example" id="nome">
+          <input class="form-control" type="text" placeholder="Digite seu nome" aria-label="default input example"
+            id="nome">
         </div>
         <div class="col-lg-6 mb-3">
           <label for="data">Telefone</label>
-          <input class="form-control" type="tel" placeholder="(xx) xxxxx-xxxx" aria-label="default input example" id="tel">
+          <input class="form-control" type="tel" placeholder="(xx) xxxxx-xxxx" aria-label="default input example"
+            id="tel">
         </div>
         <div class="col-lg-6 mb-3">
           <label for="data">Eescolha a data</label>
@@ -101,7 +121,7 @@
           <label for="floatingTextarea" class="ms-3">Observações</label>
         </div>
 
-        <button type="button" class="btn bg-yellow" id="btn">
+        <button type="button" class="btn bg-yellow" id="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
           Fazer reserva
         </button>
 
@@ -111,15 +131,15 @@
   </main>
 
   <footer class="bg-black-css p-4 pt-5 text-light" data-aos="fade-up-right" data-aos-duration="600">
-    <div class="row">
+    <div class="row d-flex align-items-center">
       <div class="col-lg-4">
         <div class="m-auto w-50">
           <img src="../assets/logo.png" alt="" class="w-100">
         </div>
       </div>
-      <div class="col-lg-2 mb-3">
+      <div class="col-lg-2 mb-3 fs-5">
         <div class="d-flex justify-content-center flex-column">
-          <h4 class="fw-normal fs-6 text-center">Páginas</h4>
+          <h4 class="fw-normal fs-4 text-center">Páginas</h4>
           <ul class="m-auto">
             <li class="link"><a href="../index.html" class="text-decoration-none text-light fw-light">Home</a></li>
             <li class="link"><a href="cardapio.html" class="text-decoration-none text-light fw-light">Cardápio</a></li>
@@ -129,8 +149,8 @@
           </ul>
         </div>
       </div>
-      <div class="col-lg-3 text-center">
-        <h4 class="fw-normal fs-6">Localização</h4>
+      <div class="col-lg-3 fs-5 text-center">
+        <h4 class="fw-normal fs-4">Localização</h4>
         <p class="link">
           <a href="https://maps.app.goo.gl/f5EzXtSPwbKE5zkK7" class="text-decoration-none text-light fw-light"
             target="_blank">
@@ -139,8 +159,8 @@
         </p>
 
       </div>
-      <div class="col-lg-3 text-center">
-        <h4 class="fw-normal fs-6">Contato</h4>
+      <div class="col-lg-3 fs-5 text-center">
+        <h4 class="fw-normal fs-4">Contato</h4>
         <a href="https://www.instagram.com/espacobelavistacn/" class="text-decoration-none text-light fw-light"
           target="_blank"><i class="bi bi-instagram me-3"></i></a>
         <a href="https://web.facebook.com/petiscariabelavista" class="text-decoration-none text-light fw-light"
