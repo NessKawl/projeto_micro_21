@@ -97,6 +97,8 @@
     flex-direction: column-reverse;
     }
     
-    
+    .w-75-cel {
+        width: 75vw;
+    }
 }
 
