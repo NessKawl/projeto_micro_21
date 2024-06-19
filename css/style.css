@@ -103,11 +103,11 @@
 }
 
 .text-shadow-css {
-    text-shadow: 2px 2px 5px black;
+    text-shadow: 2px 2px 5px white;
 }
 
 .bg-text {
-    background-color: #947100d3;
+    background-color: #004d03d8;
 }
 
 @media (max-width: 992px) {
