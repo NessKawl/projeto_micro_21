@@ -54,6 +54,11 @@
     transition-duration: 500ms;
 }
 
+.card-zoom-css:hover {
+    transform: scale3d(1.1, 1.1, 1.1);
+    transition-duration: 500ms;
+}
+
 .shadow-css {
     box-shadow: 5px 5px 20px  rgba(0, 0, 0, 0.3);
 }
