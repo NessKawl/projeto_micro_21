@@ -87,6 +87,14 @@
     margin-top: 10%;
 }
 
+.text-shadow-css {
+    text-shadow: 2px 2px 5px black;
+}
+
+.bg-text {
+    background-color: #947100d3;
+}
+
 @media (max-width: 992px) {
     .w-10 {
         width: 20%;
@@ -102,3 +110,17 @@
     }
 }
 
+@media (max-width: 616px) {
+    .header-h3 {
+        font-size: 2rem;
+    }
+    .header-p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 446px) {
+    .header-none {
+        display: none;
+    }
+}
