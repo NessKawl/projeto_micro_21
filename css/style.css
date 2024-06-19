@@ -45,6 +45,11 @@
     transition-duration: 500ms;
 }
 
+.menu-hover:hover {
+    transform: scale3d(1.2, 1.2, 1.2);
+    transition-duration: 500ms;
+}
+
 .shadow-css {
     box-shadow: 5px 5px 20px  rgba(0, 0, 0, 0.3);
 }
